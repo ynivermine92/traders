@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+}
+
+.search {
+  transition: all 0.9s;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  top: -94px;
+  padding: 20px;
+  width: 100%;
+  &__wrarpper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    border: 1px solid #000;
+    width: 75%;
+    padding: 0px 20px;
+    height: 40px;
+  }
+  &__btn {
+    border: 1px solid #000;
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    img {
+        width: 20px;
+      }
+  }
+
+  &__btn-clouse {
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+
+.search.active{
+    top: 0;
+    transition: all 0.9s;
+}
