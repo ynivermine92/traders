@@ -1,0 +1,130 @@
+.currency {
+    padding-top: 20px;
+
+    &__wrapper {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        max-width: 261px;
+        padding: 6px 16px 6px 16px;
+        border-radius: 6px;
+        background: rgba(83, 145, 0, 0.07);
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__box-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box-inner {
+        display: flex;
+    }
+
+    &__prive {
+        color: rgb(0, 0, 0);
+        @extend %open700;
+        font-size: 36px;
+        margin-right: 20px;
+    }
+
+    &__interest {
+        color: rgb(83, 145, 0);
+        @extend %open700;
+        font-size: 21px;
+    }
+
+    &__time {
+        margin-left: 16px;
+        display: flex;
+    }
+
+    &__text {
+        @extend %open400;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    &__text:first-child {
+        margin-bottom: 6px;
+    }
+
+    &__clock {
+        margin-right: 10px;
+        width: 17.1px;
+        height: 17.1px;
+    }
+
+    &__disclaimer {
+        border-bottom: 1px dashed rgb(64, 64, 64);
+        display: inline;
+        cursor: pointer;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item+&__item {
+        margin-top: 15px;
+    }
+
+    &__range-top {
+        margin-left: 16px;
+        margin-right: 6px;
+    }
+
+    .tabs {
+        background: rgb(249, 249, 249);
+        width: 100%;
+        margin-top: 150px;
+
+        &__header {
+            display: flex;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                margin: 0 13px;
+                cursor: pointer;
+                padding: 6px 8px;
+                font-size: 14px;
+                @extend %open600;
+                text-transform: uppercase;
+                color: rgb(79, 79, 79);
+
+                &.active {
+                    color: rgb(44, 100, 235);
+                    box-sizing: border-box;
+                    border: 1px solid rgba(44, 100, 235, 0.35);
+                    border-radius: 50px;
+                    background: rgba(44, 100, 235, 0.07);
+
+
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 50px;
+            display: flex;
+            border: 1px solid rgb(225, 225, 225);
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            max-width: 226px;
+        }
+        &__content-item{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

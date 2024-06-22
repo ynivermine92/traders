@@ -1,6 +1,10 @@
 .breadcrumbs {
   font-size: 16px;
   padding: 20px 0;
+  &__vector {
+    width: 9px;
+    height: 9px;
+  }
 
   &__list {
     display: flex;
@@ -17,6 +21,7 @@
     transition: all linear 0.3s;
 
     span {
+      display: block;
       margin: 0 2px;
     }
 
@@ -24,4 +29,5 @@
       color: red;
     }
   }
+
 }

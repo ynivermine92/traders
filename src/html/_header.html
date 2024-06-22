@@ -1,18 +1,22 @@
 <header>
   <!-- Navbar -->
   <div class="header">
-    <div class="container">
-      <div class="header__inner">
+    <div class="header__inner">
+      <div class="container">
         <div class="header__top">
           <h3 class="header__title">Online Trading Starts Here</h3>
           <div class="logo">
             <a href="#"><img src="../img/header/logo.png" alt="" /></a>
           </div>
-          <div class="header__box">
+          <div data-da=".menu, 992"  class="header__box">
             <button class="header__authorization btn">Sign In</button>
             <button class="header__register btn">Register</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="container">
         <div class="navbar">
           <nav>
             <ul class="menu">
@@ -37,10 +41,18 @@
               <li class="menu__item">
                 <a href="#" class="menu__item-link" data-scroll>WHO WE ARE</a>
               </li>
-            </ul>
-          </nav>
+            </ul> 
+            <div  data-da=".header__top, 992" class="navigation">
+              <svg class="navigation__search">
+                <use xlink:href="img/header/search.svg#searsh"></use>
+              </svg>
+              <svg class="navigation__language">
+                <use xlink:href="img/header/language.svg#language"></use>
+              </svg>
+            </nav>
+            </div>
 
-          <button class="burger">
+          <button data-da=".navigation, 992" class="burger">
             <span></span>
           </button>
         </div>
