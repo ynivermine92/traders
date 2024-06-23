@@ -31,3 +31,10 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 }
 
 tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
+
+
+
+const tabHeader = document.querySelector('.tabs__header');
+const tabItam = document.querySelectorAll('.tabs__header-item');
+const tabsContent = document.querySelectorAll('.tabs__content');
+

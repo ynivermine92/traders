@@ -1,0 +1,42 @@
+.price {
+    .tabs {
+        width: 100%;
+        margin-top: 150px;
+
+        &__header {
+            display: flex;
+            justify-content: start;
+            border-bottom: 1px solid rgb(223, 223, 224);
+            gap: 32px;
+            position: relative;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                padding: 0 16px 10px 16px;
+                display: flex;
+                cursor: pointer;
+                
+                &:first-child {
+                    padding: 0px;
+                }
+
+                &.active {
+                    color: red;
+                    border-bottom: 3px solid rgb(83, 145, 0);
+                
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 75px;
+        }
+    }
+}

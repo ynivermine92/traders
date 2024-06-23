@@ -1,0 +1,62 @@
+.selector {
+  display: none;
+}
+
+.card {
+  display: none;
+  border: 1px solid #ccc;
+  margin-top: 16px;
+
+  .tabs__content-item {
+    display: flex !important;
+  }
+}
+
+.card.active {
+  display: block;
+}
+
+.selector__wrapper {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(211, 211, 212);
+  border-radius: 4px;
+  padding: 6px 16px 6px 16px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  position: relative;
+}
+
+.selector__inner {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/currency/select.png');
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    right: 12px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .selector {
+    display: block;
+  }
+
+  .tabs__content-item {
+    overflow-x: auto;
+  }
+
+}
