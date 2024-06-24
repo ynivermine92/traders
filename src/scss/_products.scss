@@ -1,0 +1,43 @@
+.products{
+    .title{
+       margin-top: 30px;
+    }
+    &__sub-title{
+        margin-bottom: 22px;
+        font-size: 16px;
+        @extend %open400;
+    }
+    &__item:first-child{
+        background: rgb(240, 241, 242);
+        color: #000;
+        font-size: 16px;
+        @extend %open600;
+        span{
+            display: flex;
+            justify-content: center;
+            &:first-child{
+                justify-content: start;
+            }
+        }
+        
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgb(225, 225, 225);
+        padding: 16px;
+        font-size: 16px;
+        @extend %open400;
+        span{
+            max-width: 217px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &:first-child{
+                justify-content: start;
+            }
+        }
+    }
+}

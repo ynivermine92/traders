@@ -1,12 +1,8 @@
-// Footer
-footer {
-    display: block;
-    &__image{
+.analytics{
+    .analytics__image{
         max-width: 870px;
         img{
             width: 100%;
         }
     }
 }
-
-

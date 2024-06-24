@@ -1,7 +1,9 @@
 .price {
+
+
     .tabs {
+        padding: 30px 0px;
         width: 100%;
-        margin-top: 150px;
 
         &__header {
             display: flex;
@@ -18,25 +20,173 @@
                 padding: 0 16px 10px 16px;
                 display: flex;
                 cursor: pointer;
-                
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                @extend %open600;
+
                 &:first-child {
                     padding: 0px;
                 }
 
                 &.active {
-                    color: red;
+                    color: rgb(83, 145, 0);
+                    ;
                     border-bottom: 3px solid rgb(83, 145, 0);
-                
+
                 }
             }
         }
 
-        &__content {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 75px;
+        &__content {}
+        &__content-item {
+            justify-content: space-between;
         }
     }
+
+    .price__convert {
+        width: 100%;
+        max-width: 870px;
+    }
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px 30px 26px 30px;
+        border: 1px solid rgb(83, 145, 0);
+        border-bottom: 5px solid rgb(83, 145, 0);
+        position: relative;
+    }
+
+    &__wrapper {
+        box-sizing: border-box;
+        border: 1px solid rgb(211, 211, 212);
+        border-radius: 6px;
+        background: rgb(240, 241, 242);
+        padding: 16px;
+    }
+
+    &__convert-subTitle {
+        font-size: 21px;
+        @extend %open600;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+
+    &__convert-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__conver-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__convert-input {
+        height: 42px;
+        width: 292px;
+        display: flex;
+        padding: 20px;
+        font-size: 16px;
+        @extend %open400;
+    }
+
+    &__convert-currency {
+        width: 61px;
+        height: 42px;
+        padding: 10px 16px 10px 16px;
+        background: #FFFF;
+        font-size: 14px;
+        @extend %open400;
+        display: flex;
+        align-items: center;
+    }
+
+    &__convert-btn {
+        background: #ffff;
+        height: 42px;
+        width: 42px;
+        margin: 0 16px;
+    }
+
+    &__items {
+        padding: 30px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    &__item {
+        max-width: 380px;
+        width: 50%;
+        height: 30px;
+        border-bottom: 1px solid rgb(211, 211, 212);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:nth-child(1n){
+            margin-top: 11px;
+            border: px solid red;
+        }
+    }
+
+
+    &__item-name {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+        @extend %open400;
+    }
+
+    &__item-sum {
+        font-size: 16px;
+        @extend %open600;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__convert-start {
+        padding: 10px 22px;
+        border-radius: 6px;
+        font-size: 16px;
+        @extend %open700;
+        max-width: 370px;
+        width: 100%;
+    }
+    &__frame{
+        padding-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+    &__log {
+        height: 18px;
+        display: flex;
+        border-radius: 3px;
+        background: rgba(143, 135, 131, 0.48);
+        color: rgb(255, 255, 255);
+        @extend %open600;
+        font-size: 11px;
+        padding: 3px 6px 3px 6px;
+    }
+    &__text{
+        margin-left: 6px;
+        @extend %open400;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+
 }

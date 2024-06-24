@@ -31,6 +31,12 @@ input::-ms-clear {
     display: none;
 }
 
+input:focus {
+    outline: none;
+    border-color: initial;
+}
+
+
 button {
     cursor: pointer;
 }

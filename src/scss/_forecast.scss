@@ -1,0 +1,211 @@
+.forecast {
+    &__items {
+        border: 3px solid rgb(218, 235, 216);
+        border-radius: 10px;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .title {
+        margin-top: 35px;
+    }
+
+    &__item {
+        display: flex;
+        padding: 16px 0;
+        border-bottom: 1px solid rgb(225, 225, 225);
+        align-items: center;
+
+    }
+
+    &__img {
+        margin-right: 22px;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(113, 178, 25, 0.1);
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        @extend %open400;
+        color: rgb(0, 0, 0);
+        line-height: 1.4;
+    }
+
+    &__wrapper {
+        .forecast__text {
+            font-size: 16px;
+            @extend %open400;
+            color: rgb(0, 0, 0);
+            line-height: 2.28;
+            padding: 30px 0;
+            color: rgb(0, 0, 0);
+        }
+
+    }
+
+    &__recommendation {
+        .forecast__items {
+            padding: 16px 16px 10px 16px;
+            display: flex;
+        }
+
+        .forecast__item {
+            max-width: 284px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .forecast__title {
+            color: rgb(83, 145, 0);
+            font-size: 18px;
+            @extend %open600;
+            padding: 22px 0px 12px 0px;
+        }
+
+        .forecast__text {
+            font-size: 16px;
+            @extend %open400;
+            line-height: 2.42;
+        }
+    }
+
+    &__recommendation {
+        .forecast__items {
+            display: flex;
+            border: none;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .forecast__item {
+            padding-bottom: 0px;
+            border-radius: 10px;
+        }
+
+        .forecast__sub-title {
+            padding: 6px 16px 6px 16px;
+            background: rgba(113, 178, 25, 0.07);
+            font-size: 16px;
+            @extend %open600;
+        }
+
+        .forecast__text {
+            text-align: center;
+            line-height: 2em;
+            max-width: 252px;
+            font-size: 16px;
+            @extend %open400;
+        }
+
+        .forecast__time {
+            background: rgba(41, 46, 51, 0.07);
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            @extend %open600;
+            padding: 6px 16px 6px 16px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .forecast__item-buy {
+            border: 1px solid rgb(83, 145, 0);
+
+            .forecast__sub-title {
+                color: rgb(83, 145, 0);
+                border-radius: 9px;
+                background: rgba(113, 178, 25, 0.07);
+                color: rgb(83, 145, 0);
+            }
+        }
+
+        .forecast__item-sell {
+            border: 1px solid rgb(204, 82, 73);
+
+            .forecast__sub-title {
+                border-radius: 9px;
+                background: rgba(204, 82, 73, 0.07);
+                color: rgb(204, 82, 73);
+                ;
+
+            }
+        }
+
+        .forecast__item-neutral {
+            border: 1px solid rgba(41, 46, 51, 0.07);
+
+            .forecast__sub-title {
+                border-radius: 9px;
+                background: rgba(41, 46, 51, 0.07);
+                color: rgb(41, 46, 51);
+            }
+        }
+    }
+
+    &__models {
+        width: 100%;
+        padding: 16px;
+        background: rgb(244, 247, 254);
+        margin: 30px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: rgb(44, 100, 235);
+            width: 5px;
+            height: 107px;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__models-text {
+        columns: #000;
+        font-size: 16px;
+        @extend %open400;
+    }
+
+    &__models-box {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    &__models-link {
+        display: flex;
+        font-size: 16px;
+        @extend %open600;
+        color: rgb(24, 115, 235);
+        padding: 11px;
+        border-radius: 10px;
+        background: rgba(44, 100, 235, 0.05);
+        transition: all 0.5s;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: rgb(24, 115, 235);
+            margin-left: 6px;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            color: #000;
+            transition: all 0.5s;
+
+            svg {
+                fill: #000;
+            }
+        }
+    }
+
+}
