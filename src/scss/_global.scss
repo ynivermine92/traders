@@ -62,3 +62,9 @@ body {
     @extend %open700;
     color: #000;
 }
+
+@media (max-width: 650px){
+    .title{
+        font-size: 24px;
+    }
+}

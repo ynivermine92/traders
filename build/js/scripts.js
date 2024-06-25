@@ -1,47 +1,62 @@
+
 // Custom Scripts
+    function updatePriceRange() {
+        const minPrice = document.getElementById('min-price').value;
+        const maxPrice = document.getElementById('max-price').value;
+
+        document.getElementById('min-price-display').innerText = `${minPrice}`;
+        document.getElementById('max-price-display').innerText = `${maxPrice}`;
+    }
+
 
 
 function tabs(headerSelector, tabSelector, contentSelector, activeClass, display='flex') {
     const header = document.querySelector(headerSelector),
-          tab = document.querySelectorAll(tabSelector),
-          content = document.querySelectorAll(contentSelector)
+          tabs = document.querySelectorAll(tabSelector),
+          contents = document.querySelectorAll(contentSelector);
+
     function hideTabContent() {
-        content.forEach(item => {
-            item.style.display = 'none'
+        contents.forEach(item => {
+            item.style.display = 'none';
         });
-        tab.forEach(item => {
-            item.classList.remove(activeClass)
+        tabs.forEach(item => {
+            item.classList.remove(activeClass);
         });
     }
+
     function showTabContent(i = 0) {
-       content[i].style.display = display
-       tab[i].classList.add(activeClass)
+        contents[i].style.display = display;
+        tabs[i].classList.add(activeClass);
     }
-    hideTabContent()
-    showTabContent()
+
+    hideTabContent();
+    showTabContent();
+
     header.addEventListener('click', e => {
-        const target = e.target
+        const target = e.target;
         if (target.classList.contains(tabSelector.replace(/\./, '')) || 
-        target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
-            tab.forEach((item, i) => {
-                if ( target == item || target.parentNode == item ) {
-                    hideTabContent()
-                    showTabContent(i)
+            target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
+            tabs.forEach((item, i) => {
+                if (target == item || target.parentNode == item) {
+                    hideTabContent();
+                    showTabContent(i);
                 }
             });
         }
-    })
+    });
 }
 
-tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
-tabs( '.tabs__header2' ,'.tabs__header-item2', '.tabs__content-item2', 'active')
 
+tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active');
+tabs('.tabs-currency__header', '.tabs-currency__header-item', '.tabs-currency__content-item', 'active');
+tabs('.tabs__header2', '.tabs__header-item2', '.tabs__content-item2', 'active');
+tabs('.tabs__header3', '.tabs__header-item3', '.tabs__content-item3', 'active');
+tabs('.tabs__header4', '.tabs__header-item4', '.tabs__content-item4', 'active');
 
 
 const tabHeader = document.querySelector('.tabs__header');
-const tabItam = document.querySelectorAll('.tabs__header-item');
+const tabItems = document.querySelectorAll('.tabs__header-item');
 const tabsContent = document.querySelectorAll('.tabs__content');
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const select = document.getElementById('card-selector');
@@ -91,6 +106,11 @@ function burgerMenu() {
     })
 }
 burgerMenu()
+
+
+
+
+
 
 ﻿
 class DynamicAdapt {
@@ -219,3 +239,7 @@ class DynamicAdapt {
 }
 const da = new DynamicAdapt('max');
 da.init();
+
+
+
+

@@ -16,10 +16,7 @@
         @extend %open600;
         color: rgb(0, 0, 0);
         line-height: 1.5em;
-
-        span {
-            color: rgb(83, 145, 0)
-        }
+        position: relative;
 
         img {
             position: relative;
@@ -28,14 +25,36 @@
             width: 18px;
             height: 18px;
         }
+
+        &::after {
+            content: '';
+            border: 3px solid rgba(0, 0, 0, 0.7);
+            width: 40px;
+            position: absolute;
+            left: 0;
+            bottom: -22px;
+        }
     }
 
-    .tabs2 {
+    &__text-green {
+        color: rgb(83, 145, 0);
+    }
+
+    &__text-red {
+        color: rgb(204, 82, 73);
+    }
+
+    //tabs
+    .tabs2,
+    .tabs3,
+    .tabs4 {
 
         width: 100%;
-        margin-top: 22px;
+        margin-top: 44px;
 
-        .tabs__header2 {
+        .tabs__header2,
+        .tabs__header3,
+        .tabs__header4 {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid rgb(223, 223, 224);
@@ -44,7 +63,9 @@
                 flex-wrap: wrap;
             }
 
-            .tabs__header-item2 {
+            .tabs__header-item2,
+            .tabs__header-item3,
+            .tabs__header-item4 {
                 padding-bottom: 8px;
                 color: rgb(79, 79, 79);
                 cursor: pointer;
@@ -58,13 +79,66 @@
             }
         }
 
-        .tabs__content-item2 {
+        .tabs__content-item2,
+        .tabs__content-item3,
+        .tabs__content-item4 {
             margin-top: 24px;
 
         }
 
     }
+
+    .tabs4 {
+        margin-top: 0;
+        .tabs__header4 {
+            width: 100%;
+        }
+        .coinsTop__box{
+            padding-bottom: 0;
+        }
+
+        .coins__percentage {
+            margin-left: 0;
+        }
+
+        .coins__percentage-sum {
+            @extend %open600;
+            margin-left: 20px;
+        }
+
+        .coins__coin-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .coins__items {
+            width: 100%;
+        }
+
+        .coins__item {
+            padding: 10px;
+            background: rgb(249, 249, 249);
+
+        }
+
+        .coins__item+.coins__item {
+            margin-top: 10px;
+        }
+
+        .coins__item:nth-child(2n) {
+            background: #fff;
+        }
+
+        .coinsTop__inner {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
 }
+
+
 
 
 .coins__items {
@@ -74,33 +148,35 @@
 .coins__item {
     display: flex;
     align-items: center;
-    border: 1px solid red;
-    align-items: center;
     border-radius: 6px;
     justify-content: space-between;
 }
-.coins__item + .coins__item {
+
+.coins__item+.coins__item {
     margin-top: 6px;
 }
 
 
-.coins__item-yellow{
+.coins__item-yellow {
     border: 1px solid rgba(250, 199, 30, 0.15);
-    .coins__item-number{
+
+    .coins__item-number {
         background: rgba(250, 199, 30, 0.15);
     }
 }
 
-.coins__item-grey{
+.coins__item-grey {
     border: 1px solid rgba(192, 200, 208, 0.15);
-    .coins__item-number{
+
+    .coins__item-number {
         background: rgba(192, 200, 208, 0.15);
     }
 }
 
-.coins__item-orange{
+.coins__item-orange {
     border: 1px solid rgba(252, 161, 110, 0.15);
-    .coins__item-number{
+
+    .coins__item-number {
         background: rgba(252, 161, 110, 0.15);
     }
 }
@@ -119,35 +195,49 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 10px;
+    justify-content: space-around;
 }
-.coins__coin{
+
+.coins__coin {
     font-size: 14px;
     @extend %open600;
     color: rgba(0, 0, 0, 0.7);
 }
-.coins__percentage{
+
+.coins__percentage {
     font-size: 14px;
     @extend %open600;
-    margin-left: 30px;
+
 }
-.coins__percentage-red{
+
+.coins__percentage-red {
     color: rgb(204, 82, 73);
 }
 
-.coins__percentage-green{
+.coins__percentage-green {
     color: rgb(83, 145, 0);
 }
 
-.coins__item-link{
+.coins__item-link {
     display: flex;
     align-content: center;
 }
-.coins__image{
+
+.coins__image {
     padding: 6px 10px 6px 10px;
     display: flex;
     align-items: center;
-    img{
+
+    img {
         width: 100%;
     }
+}
+.coinsTop__box-wrapper{
+    padding: 20px 15px 20px 15px;
+}
+.coins__item-text{
+    @extend %open400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1.5em;
 }

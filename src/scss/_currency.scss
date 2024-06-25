@@ -1,9 +1,7 @@
 .currency {
     padding-top: 20px;
 
-    .container {
-        border: 1px solid red;
-    }
+
 
     &__wrapper {
         padding-top: 20px;
@@ -85,7 +83,13 @@
         margin-right: 6px;
     }
 
-    .tabs {
+
+
+
+    
+
+
+    .tabs-currency{
         background: rgb(249, 249, 249);
         width: 100%;
         margin-top: 30px;
@@ -249,12 +253,34 @@
 }
 
 
+@media (max-width: 1090px) {
+
+    .currency {
+        &__title {
+            text-align: center;
+        }
+
+        &__box-inner {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        &__social-box {
+            display: block;
+        }
+    }
+
+}
+
+
 @media (max-width: 992px) {
     .currency {
-        .tabs {
+        .tabs-currency {
             display: none;
 
-           
+
             overflow: hidden;
 
             &__content {
@@ -270,6 +296,38 @@
                 display: block;
             }
         }
+
+        &__box-inner {
+            display: none;
+        }
+
+        &__social-box {
+            display: none;
+        }
+    }
+
+    .selector {
+        background: rgb(249, 249, 249);
+        padding: 20px;
+    }
+
+    .selector__box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .currency__social-box {
+        display: flex;
+        justify-content: end;
+        padding-bottom: 16px;
+
+    }
+    .selector__inner{
+        cursor: pointer;
     }
 
 }

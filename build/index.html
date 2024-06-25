@@ -13,11 +13,315 @@
 
 <body class="main__body">
     <!-- Header -->
-    
+    <header>
+  <!-- Navbar -->
+  <div class="header">
+    <div class="header__inner">
+      <div class="container">
+        <div class="header__top">
+          <h3 class="header__title">Online Trading Starts Here</h3>
+          <div class="logo">
+            <a href="#"><img src="../img/header/logo.png" alt="" /></a>
+          </div>
+          <div data-da=".menu, 992" class="header__box">
+            <button class="header__authorization btn">Sign In</button>
+            <button class="header__register btn">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="navbar">
+          <nav>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link" data-scroll>BEST BROKERS</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link" data-scroll>TRADING GUIDES</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link" data-scroll>PRICE PREDICTIONS</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link" data-scroll>BROKERS BY COUNTRIES</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link" data-scroll>WHO WE ARE</a>
+              </li>
+            </ul>
+            <div data-da=".header__top, 992" class="navigation">
+              <svg class="navigation__search">
+                <use xlink:href="img/header/search.svg#searsh"></use>
+              </svg>
+              <svg class="navigation__language">
+                <use xlink:href="img/header/language.svg#language"></use>
+              </svg>
+          </nav>
+        </div>
+
+        <button data-da=".navigation, 992" class="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
     <!-- Main Page -->
     <main>
-        
-        <section class="price">
+        <div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Traders Union</a>
+                    <svg class="breadcrumbs__vector">
+                        <use xlink:href="img/breadcrumbs/vector.svg#vector"></use>
+                    </svg></span>
+                </li>
+
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Traders Union</a>
+                    <svg class="breadcrumbs__vector">
+                        <use xlink:href="img/breadcrumbs/vector.svg#vector"></use>
+                    </svg></span>
+                </li>
+
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Traders Union</a>
+                    <svg class="breadcrumbs__vector">
+                        <use xlink:href="img/breadcrumbs/vector.svg#vector"></use>
+                    </svg></span>
+                </li>
+            </ul>
+            <p class="breadcrumbs__text">Advertiser Disclosure</p>
+        </div>
+    </div>
+</div>
+        <section class="currency">
+  <div class="container">
+    <h1 class="currency__title title">EUR/USD - Euro US Dollar</h1>
+
+    <div class="currency__wrapper">
+      <div class="currency__box-inner">
+        <div class="currency__box">
+          <div class="currency__prive">1.0873</div>
+          <div class="currency__box-wrapper">
+            <div class="currency__interest">+0.24%</div>
+            <img class="currency__image" src="../img/currency/arrowTop.png" alt="#" />
+          </div>
+        </div>
+        <div class="currency__time">
+          <img class="currency__clock" src="../img/currency/clock.png" alt="" />
+          <div class="currency__time-box">
+            <p class="currency__text">Real-time Data 12:05:46</p>
+            <p class="currency__text currency__disclaimer">Disclaimer</p>
+          </div>
+        </div>
+      </div>
+     <!--  range -->
+      <div class="range">
+        <div class="range__inner">
+          <div class="range__labal">Week change</div>
+          <span class="range__price">1.0762</span>
+          <input class="range__input" type="range" id="min-price" min="0" max="100" value="100" step="10"
+            oninput="updatePriceRange()"> 
+          <span id="min-price-display" class="range__price">1.0810</span>
+
+        </div>
+        <div class="range__inner">
+          <div class="range__labal">Week change</div>
+          <span class="range__price">1.0762</span>
+          <input class="range__input" type="range" id="max-price" min="0" max="100" value="0" step="10"
+            oninput="updatePriceRange()">
+          <span id="max-price-display" class="range__price">1.0910</span>
+        </div>
+      </div>
+     <!--  range -->
+    </div>
+
+
+
+  </div>
+  </div>
+  <!-- Tabs -->
+   <div class="tabs-currency">
+    <div class="container">
+
+      <div class="tabs-currency__header-box">
+        <div class="tabs-currency__header">
+          <div class="tabs-currency__header-item active">Currency pairs</div>
+          <div class="tabs-currency__header-item">Cryptocurrencies</div>
+          <div class="tabs-currency__header-item">Stocks</div>
+          <div class="tabs-currency__header-item">Indices</div>
+          <div class="tabs-currency__header-item">Commodities</div>
+        </div>
+        <div data-da=".currency__social-box, 992" class="tabs-currency__social">
+          <span>Share:</span>
+          <svg class="social__facebook">
+            <use xlink:href="img/currency/facebook.svg#facebook"></use>
+          </svg>
+          <svg class="social__twitter">
+            <use xlink:href="img/currency/twitter.svg#twitter"></use>
+          </svg>
+        </div>
+      </div>
+      
+        <div data-da=".card1, 992" class="tabs-currency__content-item">
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs__box">
+                <span class="tabs-currency__currency-name">LTC/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">BNB/USD</span>
+                <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">USDT/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">LTC/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">ETH/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-da=".card2, 992" class="tabs-currency__content-item">
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">LTC/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">BNB/USD</span>
+                <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-currency__wrapper-box">
+            <div class="tabs-currency__box-imege">
+              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+            </div>
+            <div class="tabs-currency__inner">
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-name">USDT/USD</span>
+                <span class="tabs-currency__currency-percentage">+0.19%</span>
+              </div>
+              <div class="tabs-currency__box">
+                <span class="tabs-currency__currency-amount">1.0798</span>
+                <span class="tabs-currency__currency-profit">+0.056</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-currency__content-item">3</div>
+        <div class="tabs-currency__content-item">4</div>
+        <div class="tabs-currency__content-item">5</div>
+      </div>
+    
+    </div>
+  </div> 
+ <!-- Tabs -->
+<!--  selector -->
+<div class="selector">
+    <div class="currency__social-box"></div>
+    <div class="contaner">
+      <div class="selector__box">
+        <div class="selector__inner">
+          <select id="card-selector" class="selector__wrapper">
+            <option value="card1">Currency pairs</option>
+            <option value="card2">Cryptocurrencies</option>
+            <option value="card3">Stocks</option>
+          </select>
+        </div>
+      </div>
+      <div id="card1" class="card card1"></div>
+      <div id="card2" class="card card2"></div>
+      <div id="card3" class="card card3"></div>
+    </div>
+  </div>
+<!--   selector -->
+</section>
+       <section class="price">
     <!-- Tabs -->
     <div class="tabs">
         <div class="container">
@@ -276,10 +580,11 @@
                                 <p class="price__text">Your capital is at risk</p>
                             </div>
                         </div>
-
+                      <!-- Tabs -->
                         <div class="coinsTop">
                             <div class="coinsTop__box ">
-                                <div class="coinsTop__sub-title">Top 3 <span class="fff">Gainers</span> <img
+                                <div class="coinsTop__sub-title">Top 3 <span
+                                        class="coinsTop__text coinsTop__text-green">Gainers</span> <img
                                         src="../img/currency/arrowTop.png" alt="">Over
                                     the Last 30 Days</div>
 
@@ -297,7 +602,8 @@
                                                     <div class="coins__item-number">1</div>
                                                     <div class="coins__coin-wrapper">
                                                         <div class="coins__coin">BTC/USD</div>
-                                                        <div class="coins__percentage  coins__percentage-green">+0.19%</div>
+                                                        <div class="coins__percentage  coins__percentage-green">+0.19%
+                                                        </div>
                                                     </div>
                                                     <div class="coins__image">
                                                         <a class="coins__item-link" href="#">
@@ -311,7 +617,8 @@
                                                     <div class="coins__item-number">2</div>
                                                     <div class="coins__coin-wrapper">
                                                         <div class="coins__coin">USD/CAD</div>
-                                                        <div class="coins__percentage coins__percentage-red">-0.19%</div>
+                                                        <div class="coins__percentage coins__percentage-red">-0.19%
+                                                        </div>
                                                     </div>
                                                     <div class="coins__image">
                                                         <a class="coins__item-link" href="#">
@@ -325,7 +632,8 @@
                                                     <div class="coins__item-number">3</div>
                                                     <div class="coins__coin-wrapper">
                                                         <div class="coins__coin">USD/INR</div>
-                                                        <div class="coins__percentage coins__percentage-green">+0.19%</div>
+                                                        <div class="coins__percentage coins__percentage-green">+0.19%
+                                                        </div>
                                                     </div>
                                                     <div class="coins__image">
                                                         <a class="coins__item-link" href="#">
@@ -345,9 +653,195 @@
                                 </div>
                             </div>
                         </div>
+                       <!-- Tabs -->
+                        <div class="coinsTop">
+                            <div class="coinsTop__box ">
+                                <div class="coinsTop__sub-title">Top 3 <span
+                                        class="coinsTop__text coinsTop__text-red">Losers</span> <img
+                                        src="../img/currency/arrowBottom.png" alt="">Over
+                                    the Last 30 Days</div>
 
+                                <div class="tabs3">
+                                    <div class="tabs__header3">
+                                        <div class="tabs__header-item3 active">Forex</div>
+                                        <div class="tabs__header-item3">Stocks</div>
+                                        <div class="tabs__header-item3">Crypto</div>
+                                        <div class="tabs__header-item3">Commodities</div>
+                                    </div>
+                                    <div class="tabs__content3">
+                                        <div class="tabs__content-item3">
+                                            <ul class="coins__items">
+                                                <li class="coins__item coins__item-yellow">
+                                                    <div class="coins__item-number">1</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__coin">LTC/USD</div>
+                                                        <div class="coins__percentage  coins__percentage-green">+0.19%
+                                                        </div>
+                                                    </div>
+                                                    <div class="coins__image">
+                                                        <a class="coins__item-link" href="#">
+                                                            <img src="../img/header/arrowLeft.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="coins__item coins__item-grey">
+
+                                                    <div class="coins__item-number">2</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__coin">BNB/USD</div>
+                                                        <div class="coins__percentage coins__percentage-red">-0.19%
+                                                        </div>
+                                                    </div>
+                                                    <div class="coins__image">
+                                                        <a class="coins__item-link" href="#">
+                                                            <img src="../img/header/arrowLeft.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="coins__item coins__item-orange">
+                                                    <div class="coins__item-number">3</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__coin">MATIC/INR</div>
+                                                        <div class="coins__percentage coins__percentage-green">+0.19%
+                                                        </div>
+                                                    </div>
+                                                    <div class="coins__image">
+                                                        <a class="coins__item-link" href="#">
+                                                            <img src="../img/header/arrowLeft.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="tabs__content-item3">2</div>
+                                        <div class="tabs__content-item3">3</div>
+                                        <div class="tabs__content-item3">4</div>
+                                        <div class="tabs__content-item3">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Tabs -->
 
+                        <div class="coinsTop">
+                            <div class="coinsTop__inner">
+                                <div class="coinsTop__box">
+                                    <div class="coinsTop__sub-title">Long-term forecast based on technical analysis
+                                    </div>
+                                </div>
+                                <div class="tabs4">
+                                    <div class="coinsTop__box">
+                                        <div class="tabs__header4">
+                                            <div class="tabs__header-item4 active">Forex</div>
+                                            <div class="tabs__header-item4">Stocks</div>
+                                            <div class="tabs__header-item4">Crypto</div>
+                                            <div class="tabs__header-item4">Commodities</div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content4">
+                                        <div class="tabs__content-item4">
+                                            <ul class="coins__items">
+                                                <li class="coins__item coins__item-yellow">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-red">Sell</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-red">Sell</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-red">Sell</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-red">Sell</div>
+                                                    </div>
+                                                </li>
+                                                <li class="coins__item">
+                                                    <div class="coins__coin">BTC/USD</div>
+                                                    <div class="coins__coin-wrapper">
+                                                        <div class="coins__percentage-sum">0.6087</div>
+                                                        <div class="coins__percentage  coins__percentage-green">Strong
+                                                            Buy</div>
+                                                    </div>
+                                                </li>
+                                                <div class="coinsTop__box-wrapper">
+                                                    <p class="coins__item-text">
+                                                        For this calculation our algorithm uses data on a weekly
+                                                        interval of
+                                                        technical indicators: MA, RSI, CCI, ADX, MACD, Momentum,
+                                                        Ichimoku, etc.
+                                                    </p>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tabs__content-item4">2</div>
+                                        <div class="tabs__content-item4">3</div>
+                                        <div class="tabs__content-item4">4</div>
+                                        <div class="tabs__content-item4">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Tabs -->
                     </div>
                 </div>
                 <div class="tabs__content-item">2</div>
@@ -355,7 +849,11 @@
             </div>
         </div>
     </div>
+
+    
 </section>
+
+
     </main>
 
 </body>

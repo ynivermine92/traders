@@ -1,0 +1,100 @@
+.range {
+    max-width: 560px;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    &__labal {
+        margin-right: 10px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7);
+        @extend %open400;
+    }
+
+    &__price {
+        @extend %open600;
+        font-size: 16px;
+    }
+
+    .range__inner +.range__inner {
+        margin-top: 16px;
+    }
+
+}
+
+
+.range input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 325px;
+    margin: 0 10px;
+}
+
+.range input[type="range"]:focus {
+    outline: none;
+}
+
+.range input[type="range"]::-webkit-slider-runnable-track {
+    max-width: 325px;
+    height: 1px;
+    border: 1px solid rgb(211, 211, 212);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: red;
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 9px;
+    cursor: pointer;
+    background-image: url('../img/currency/arrow.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    top: -4px;
+
+}
+
+.range input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url('../img/currency/arrow.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.range input[type="range"]#max-price::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 9px;
+    cursor: pointer;
+    background-image: url('../img/currency/arrowred.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    top: -4px;
+}
+
+
+
+@media (max-width: 1090px) {
+
+    .range{
+        display: none;
+    }
+
+}
