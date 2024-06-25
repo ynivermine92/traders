@@ -19,6 +19,11 @@ body {
   font-weight: 400;
 }
 
+.coins__percentage,
+.coins__coin,
+.coins__item-number,
+.coinsTop .tabs2 .tabs__header2 .tabs__header-item2,
+.coinsTop__sub-title,
 .products__item:first-child,
 .forecast__models-link,
 .forecast__recommendation .forecast__time,
@@ -887,6 +892,7 @@ nav {
 
 .price__convert-input {
   height: 42px;
+  cursor: pointer;
   width: 292px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1300,12 +1306,12 @@ nav {
 .bonus {
   border: 1px solid rgb(225, 225, 225);
   border-radius: 10px;
-  top: 30px;
-  position: relative;
+  margin-top: 30px;
   max-width: 270px;
 }
 
 .bonus__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1358,6 +1364,185 @@ nav {
 
 .bonus .price__text {
   margin-top: 6px;
+}
+
+.coinsTop {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-top: 30px;
+  max-width: 270px;
+}
+
+.coinsTop__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px 20px 15px;
+}
+
+.coinsTop__sub-title {
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+}
+
+.coinsTop__sub-title span {
+  color: rgb(83, 145, 0);
+}
+
+.coinsTop__sub-title img {
+  position: relative;
+  top: 6px;
+  left: -6px;
+  width: 18px;
+  height: 18px;
+}
+
+.coinsTop .tabs2 {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.coinsTop .tabs2 .tabs__header2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgb(223, 223, 224);
+}
+
+.coinsTop .tabs2 .tabs__header2 .tabs__header-item2 {
+  padding-bottom: 8px;
+  color: rgb(79, 79, 79);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.coinsTop .tabs2 .tabs__header2 .tabs__header-item2.active {
+  color: rgb(83, 145, 0);
+  border-bottom: 3px solid rgb(83, 145, 0);
+}
+
+.coinsTop .tabs2 .tabs__content-item2 {
+  margin-top: 24px;
+}
+
+.coins__items {
+  width: 100%;
+}
+
+.coins__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+  align-items: center;
+  border-radius: 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coins__item + .coins__item {
+  margin-top: 6px;
+}
+
+.coins__item-yellow {
+  border: 1px solid rgba(250, 199, 30, 0.15);
+}
+
+.coins__item-yellow .coins__item-number {
+  background: rgba(250, 199, 30, 0.15);
+}
+
+.coins__item-grey {
+  border: 1px solid rgba(192, 200, 208, 0.15);
+}
+
+.coins__item-grey .coins__item-number {
+  background: rgba(192, 200, 208, 0.15);
+}
+
+.coins__item-orange {
+  border: 1px solid rgba(252, 161, 110, 0.15);
+}
+
+.coins__item-orange .coins__item-number {
+  background: rgba(252, 161, 110, 0.15);
+}
+
+.coins__item-number {
+  padding: 6px 10px 6px 10px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coins__coin-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.coins__coin {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.coins__percentage {
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.coins__percentage-red {
+  color: rgb(204, 82, 73);
+}
+
+.coins__percentage-green {
+  color: rgb(83, 145, 0);
+}
+
+.coins__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.coins__image {
+  padding: 6px 10px 6px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coins__image img {
+  width: 100%;
 }
 
 @media (max-width: 1449.98px) {
@@ -1552,6 +1737,11 @@ nav {
   }
 
   .price .tabs__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .coinsTop .tabs2 .tabs__header2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

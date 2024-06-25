@@ -1,10 +1,10 @@
 .bonus {
     border: 1px solid rgb(225, 225, 225);
     border-radius: 10px;
-    top: 30px;
-    position: relative;
+    margin-top: 30px;
     max-width: 270px;
     &__box{
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;

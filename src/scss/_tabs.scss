@@ -1,0 +1,153 @@
+.coinsTop {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 270px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px 20px 15px;
+    }
+
+    &__sub-title {
+        font-size: 21px;
+        @extend %open600;
+        color: rgb(0, 0, 0);
+        line-height: 1.5em;
+
+        span {
+            color: rgb(83, 145, 0)
+        }
+
+        img {
+            position: relative;
+            top: 6px;
+            left: -6px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .tabs2 {
+
+        width: 100%;
+        margin-top: 22px;
+
+        .tabs__header2 {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(223, 223, 224);
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+
+            .tabs__header-item2 {
+                padding-bottom: 8px;
+                color: rgb(79, 79, 79);
+                cursor: pointer;
+                font-size: 12px;
+                @extend %open600;
+
+                &.active {
+                    color: rgb(83, 145, 0);
+                    border-bottom: 3px solid rgb(83, 145, 0);
+                }
+            }
+        }
+
+        .tabs__content-item2 {
+            margin-top: 24px;
+
+        }
+
+    }
+}
+
+
+.coins__items {
+    width: 100%;
+}
+
+.coins__item {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+.coins__item + .coins__item {
+    margin-top: 6px;
+}
+
+
+.coins__item-yellow{
+    border: 1px solid rgba(250, 199, 30, 0.15);
+    .coins__item-number{
+        background: rgba(250, 199, 30, 0.15);
+    }
+}
+
+.coins__item-grey{
+    border: 1px solid rgba(192, 200, 208, 0.15);
+    .coins__item-number{
+        background: rgba(192, 200, 208, 0.15);
+    }
+}
+
+.coins__item-orange{
+    border: 1px solid rgba(252, 161, 110, 0.15);
+    .coins__item-number{
+        background: rgba(252, 161, 110, 0.15);
+    }
+}
+
+
+.coins__item-number {
+    padding: 6px 10px 6px 10px;
+
+    height: 37px;
+    display: flex;
+    align-items: center;
+    @extend %open600;
+}
+
+.coins__coin-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+.coins__coin{
+    font-size: 14px;
+    @extend %open600;
+    color: rgba(0, 0, 0, 0.7);
+}
+.coins__percentage{
+    font-size: 14px;
+    @extend %open600;
+    margin-left: 30px;
+}
+.coins__percentage-red{
+    color: rgb(204, 82, 73);
+}
+
+.coins__percentage-green{
+    color: rgb(83, 145, 0);
+}
+
+.coins__item-link{
+    display: flex;
+    align-content: center;
+}
+.coins__image{
+    padding: 6px 10px 6px 10px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+}

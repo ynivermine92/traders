@@ -31,6 +31,7 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 }
 
 tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
+tabs( '.tabs__header2' ,'.tabs__header-item2', '.tabs__content-item2', 'active')
 
 
 
