@@ -5,6 +5,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     &__wrapper {
@@ -22,6 +23,7 @@
 
     &__price {
         @extend %open600;
+        width: 50px;
         font-size: 16px;
     }
 
@@ -44,16 +46,25 @@
 }
 
 .range input[type="range"]::-webkit-slider-runnable-track {
-    max-width: 325px;
-    height: 1px;
-    border: 1px solid rgb(211, 211, 212);
-    border-radius: 5px;
+
     cursor: pointer;
-    position: relative;
-    background-color: red;
+
 }
 
 .range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 10px;
+    cursor: pointer;
+    background-image: url('../img/currency/arrow.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    top: -1px;
+
+}
+
+.range input[type="range"]::-moz-range-thumb {
     -webkit-appearance: none;
     width: 5px;
     height: 9px;
@@ -62,18 +73,7 @@
     background-repeat: no-repeat;
     z-index: 1;
     position: relative;
-    top: -4px;
-
-}
-
-.range input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background-image: url('../img/currency/arrow.png');
-    background-repeat: no-repeat;
-    z-index: 1;
+    top: -1px;
 }
 
 
@@ -86,8 +86,58 @@
     background-repeat: no-repeat;
     z-index: 1;
     position: relative;
-    top: -4px;
+    top: -1px;
+    left: -2px;
 }
+
+
+
+
+.progress-bar {
+    width: 100%;
+    top: 10px;
+    position: absolute;
+    background-color: #e0e0e0;
+    left: 169px;
+    top: 7px;
+    max-width: 325px;
+    height: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .progress-wrapper {
+    width: 100%;
+    top: 10px;
+    position: absolute;
+    background-color: #e0e0e0;
+    left: 169px;
+    top: 7px;
+    max-width: 325px;
+    height: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  .progress-bar-inner {
+    height: 1px;
+    width: 0;
+    background-color: #76c7c0;
+    border-radius: 10px;
+    transition: width 0.25s;
+  }
+
+  .progress-wrapper-inner{
+    height: 1px;
+    width: 0;
+    background-color: #76c7c0;
+    border-radius: 10px;
+    transition: width 0.25s;
+
+  }
+  
 
 
 

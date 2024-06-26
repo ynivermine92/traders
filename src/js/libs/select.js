@@ -1,21 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const select = document.getElementById('card-selector');
-  const cards = document.querySelectorAll('.card');
+    function setupSelector(selectorId, cardClass) {
+        const select = document.getElementById(selectorId);
+        const cards = document.querySelectorAll(cardClass);
 
-  select.addEventListener('change', function() {
-      const selectedValue = select.value;
+        function showSelectedCard() {
+            const selectedValue = select.value;
+            cards.forEach(function(card) {
+                if (card.id === selectedValue) {
+                    card.classList.add('active');
+                    card.style.display = 'block'; 
+                } else {
+                    card.classList.remove('active');
+                    card.style.display = 'none'; 
+                }
+            });
+        }
 
-      cards.forEach(function(card) {
-          if (card.id === selectedValue) {
-              card.classList.add('active');
-          } else {
-              card.classList.remove('active');
-          }
-      });
-  });
 
-  // Инициализация: показываем первую карточку по умолчанию
-  if (cards.length > 0) {
-      cards[0].classList.add('active');
-  }
+        select.addEventListener('change', showSelectedCard);
+
+
+        cards.forEach(card => card.style.display = 'none'); 
+        const firstCard = document.getElementById(select.value);
+        if (firstCard) {
+            firstCard.style.display = 'block';
+        }
+    }
+
+
+    setupSelector('card-selector', '.card');
+
+    setupSelector('card-selector2', '.card2');
 });

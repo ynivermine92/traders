@@ -121,33 +121,41 @@
           </div>
         </div>
       </div>
-     <!--  range -->
+      <!--  range -->
       <div class="range">
         <div class="range__inner">
+
           <div class="range__labal">Week change</div>
           <span class="range__price">1.0762</span>
-          <input class="range__input" type="range" id="min-price" min="0" max="100" value="100" step="10"
-            oninput="updatePriceRange()"> 
+          <input class="range__input" type="range" id="min-price" min="1.0762" max="1.0810" value="1.0810" step="0.0001"
+            oninput="updatePriceRange()">
+          <div class="progress-bar">
+            <div class="progress-bar-inner" id="progress-bar-inner"></div>
+          </div>
           <span id="min-price-display" class="range__price">1.0810</span>
 
         </div>
         <div class="range__inner">
           <div class="range__labal">Week change</div>
-          <span class="range__price">1.0762</span>
-          <input class="range__input" type="range" id="max-price" min="0" max="100" value="0" step="10"
+          <span id="max-price-display" class="range__price" >1.0762</span>
+          <input class="range__input" type="range" id="max-price" min="1.0762" max="1.0810" value="1.08" step="0.0001"
             oninput="updatePriceRange()">
-          <span id="max-price-display" class="range__price">1.0910</span>
+          <div class="progress-wrapper">
+            <div class="progress-wrapper-inner" id="progress-wrapper-inner"></div>
+          </div>
+          <span class="range__price">1.0910</span>
         </div>
+
       </div>
-     <!--  range -->
+      <!--  range -->
+
+
     </div>
-
-
-
+  </div>
   </div>
   </div>
   <!-- Tabs -->
-   <div class="tabs-currency">
+  <div class="tabs-currency">
     <div class="container">
 
       <div class="tabs-currency__header-box">
@@ -168,141 +176,141 @@
           </svg>
         </div>
       </div>
-      
-        <div data-da=".card1, 992" class="tabs-currency__content-item">
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs__box">
-                <span class="tabs-currency__currency-name">LTC/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
-            </div>
+
+      <div data-da=".card1, 992" class="tabs-currency__content-item">
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
           </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
+          <div class="tabs-currency__inner">
+            <div class="tabs__box">
+              <span class="tabs-currency__currency-name">LTC/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
             </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">BNB/USD</span>
-                <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">USDT/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">LTC/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">ETH/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
             </div>
           </div>
         </div>
-        <div data-da=".card2, 992" class="tabs-currency__content-item">
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">LTC/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
-            </div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
           </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">BNB/USD</span>
+              <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
             </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">BNB/USD</span>
-                <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-currency__wrapper-box">
-            <div class="tabs-currency__box-imege">
-              <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
-            </div>
-            <div class="tabs-currency__inner">
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-name">USDT/USD</span>
-                <span class="tabs-currency__currency-percentage">+0.19%</span>
-              </div>
-              <div class="tabs-currency__box">
-                <span class="tabs-currency__currency-amount">1.0798</span>
-                <span class="tabs-currency__currency-profit">+0.056</span>
-              </div>
+            <div class="tabs-currency__box tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
             </div>
           </div>
         </div>
-        <div class="tabs-currency__content-item">3</div>
-        <div class="tabs-currency__content-item">4</div>
-        <div class="tabs-currency__content-item">5</div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">USDT/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">LTC/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">ETH/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
+            </div>
+          </div>
+        </div>
       </div>
-    
+      <div data-da=".card2, 992" class="tabs-currency__content-item">
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">LTC/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowBottom.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">BNB/USD</span>
+              <span class="tabs-currency__currency-percentage tabs-currency__currency-bottom">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit tabs-currency__currency-bottom">+0.056</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-currency__wrapper-box">
+          <div class="tabs-currency__box-imege">
+            <img class="tabs-currency__content-image" src="../img/currency/arrowTop.png" alt="" />
+          </div>
+          <div class="tabs-currency__inner">
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-name">USDT/USD</span>
+              <span class="tabs-currency__currency-percentage">+0.19%</span>
+            </div>
+            <div class="tabs-currency__box">
+              <span class="tabs-currency__currency-amount">1.0798</span>
+              <span class="tabs-currency__currency-profit">+0.056</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-currency__content-item">3</div>
+      <div class="tabs-currency__content-item">4</div>
+      <div class="tabs-currency__content-item">5</div>
     </div>
-  </div> 
- <!-- Tabs -->
-<!--  selector -->
-<div class="selector">
+
+  </div>
+  </div>
+  <!-- Tabs -->
+  <!--  selector -->
+  <div class="selector">
     <div class="currency__social-box"></div>
     <div class="contaner">
       <div class="selector__box">
@@ -319,7 +327,7 @@
       <div id="card3" class="card card3"></div>
     </div>
   </div>
-<!--   selector -->
+  <!--   selector -->
 </section>
        <section class="price">
     <!-- Tabs -->
@@ -461,7 +469,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!--  products -->
                             <div class="products">
                                 <h2 class="title">
                                     EUR/USD price prediction for 2024-2025 by months
@@ -551,15 +559,87 @@
                                     </div>
                                 </ul>
                             </div>
+                            <!--  products -->
 
+                            <!-- selector -->
+                            <div class="selector">
+                                <div class="currency__social-box"></div>
+                                <div class="container">
+                                    <div class="selector__box">
+                                        <div class="selector__inner">
+                                            <select id="card-selector2" class="selector__wrapper">
+                                                <option value="card4">June</option>
+                                                <option value="card5">July</option>
+                                                <option value="card6">August</option>
+                                                <option value="card6">September</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div id="card4" class="card2">
+                                        <ul class="cart2__items">
+                                            <li class="cart2__item">
+                                                <span class="cart2__min">Minimum Price</span>
+                                                <span class="cart2__sum">$59,944.84</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__max">Minimum Price</span>
+                                                <span class="cart2__sum">$$73,265.92</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__price">Minimum Price</span>
+                                                <span class="cart2__sum">$$66,605.38</span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div id="card5" class="card2">
+                                        <ul class="cart2__items">
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$59,944.84</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$$73,265.92</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$$66,605.38</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="card6" class="card2">
+                                        <ul class="cart2__items">
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$59,944.84</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$$73,265.92</span>
+                                            </li>
+                                            <li class="cart2__item">
+                                                <span class="cart2__text">Minimum Price</span>
+                                                <span class="cart2__sum">$$66,605.38</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- selector -->
+
+                            <!--  analytics -->
                             <div class="analytics">
                                 <h2 class="title">
                                     EUR/USD Price Forecast for 2024: Chart Analysis
                                 </h2>
                                 <div class="analytics__image">
                                     <img class="analytics__img" src="../img/analytics/analytics.jpg" alt="" />
+                                    <img class="analytics__img-mob" src="../img/analytics/analytics-mob.jpg" alt="" />
                                 </div>
                             </div>
+                            <!--  analytics -->
                         </div>
                     </div>
 
@@ -580,7 +660,7 @@
                                 <p class="price__text">Your capital is at risk</p>
                             </div>
                         </div>
-                      <!-- Tabs -->
+                        <!-- Tabs -->
                         <div class="coinsTop">
                             <div class="coinsTop__box ">
                                 <div class="coinsTop__sub-title">Top 3 <span
@@ -653,7 +733,7 @@
                                 </div>
                             </div>
                         </div>
-                       <!-- Tabs -->
+                        <!-- Tabs -->
                         <div class="coinsTop">
                             <div class="coinsTop__box ">
                                 <div class="coinsTop__sub-title">Top 3 <span
@@ -841,19 +921,18 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Tabs -->
+                        <!-- Tabs -->
                     </div>
                 </div>
                 <div class="tabs__content-item">2</div>
                 <div class="tabs__content-item">3</div>
             </div>
+
         </div>
     </div>
 
-    
+
 </section>
-
-
     </main>
 
 </body>
