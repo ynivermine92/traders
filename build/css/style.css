@@ -2293,6 +2293,10 @@ nav {
   .analytics__img-mob {
     display: none;
   }
+
+  .tabs__header-item:last-child {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 650px) {

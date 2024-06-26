@@ -318,12 +318,18 @@
     .products__sub-title {
         font-size: 14px;
     }
+
     .analytics__img-mob {
         display: block;
     }
+
     .analytics__img-mob {
         display: none;
     }
+
+    .tabs__header-item:last-child{
+        display: none !important;
+    } 
 
 }
 
