@@ -790,12 +790,28 @@ nav {
   margin-top: 16px;
 }
 
+.range .range__input {
+  direction: ltr;
+  /* Left to right */
+}
+
+.range .range__input-min {
+  direction: rtl;
+  /* Right to left */
+}
+
 .range input[type=range] {
   -webkit-appearance: none;
   width: 100%;
   max-width: 325px;
   margin: 0 10px;
-  direction: rtl;
+}
+
+.range__input-mininput[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 325px;
+  margin: 0 10px;
 }
 
 .range input[type=range]:focus {
