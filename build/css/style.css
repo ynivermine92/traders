@@ -795,6 +795,7 @@ nav {
   width: 100%;
   max-width: 325px;
   margin: 0 10px;
+  direction: rtl;
 }
 
 .range input[type=range]:focus {
@@ -866,6 +867,7 @@ nav {
   height: 1px;
   border-radius: 5px;
   cursor: pointer;
+  direction: rtl;
 }
 
 .progress-bar-inner {

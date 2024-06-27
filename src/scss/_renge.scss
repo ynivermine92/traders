@@ -39,6 +39,8 @@
     width: 100%;
     max-width: 325px;
     margin: 0 10px;
+    direction: rtl
+    
 }
 
 .range input[type="range"]:focus {
@@ -117,6 +119,9 @@
     height: 1px;
     border-radius: 5px;
     cursor: pointer;
+    direction: rtl
+
+    
   }
 
 
@@ -127,6 +132,7 @@
     background-color: #76c7c0;
     border-radius: 10px;
     transition: width 0.25s;
+    
   }
 
   .progress-wrapper-inner{
@@ -135,7 +141,6 @@
     background-color: #76c7c0;
     border-radius: 10px;
     transition: width 0.25s;
-
   }
   
 
